@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="zon.css">
+</head>
+
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="amazon.png" alt="amazon.in" width="70px">
+        </div>
+        <div class="location">
+            <img src="slides/location2.png" height="25px" width="25px">
+            <p>Delivary to <br /><span>Hyderabad</span></p>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Search Amazon.in">
+            <button>
+                <img src="slides/search.png" style="mix-blend-mode: multiply;" height="12px" width="13.3px">
+            </button>
+        </div>
+
+        <div class="sign">
+            <button>Sign in / Sign up</button>
+        </div>
+        <div class="returns">
+            <button>Returns & Orders</button>
+        </div>
+        <div class="cart">
+            <img src="slides/cart1.png" height="40px" width="33px">
+            <span>Cart</span>
+        </div>
+    </div>
+
+    <div>
+
+        <ul class="lists">
+
+            <li>Mobiles</li>
+            <li>Fashion</li>
+            <li>Electronics</li>
+            <li>Appliances</li>
+            <li>Furniture</li>
+            <li>Kids & Toys</li>
+            <li>Books</li>
+            <li>Beauty</li>
+            <li>Daily Needs</li>
+            <li>Books</li>
+            <li>Groceries</li>
+        </ul>
+    </div>
+
+    <div class="total-page">
+
+        <div class="slides">
+            <div class="slider-background"></div>
+            <span class="arrow left" onclick="prev()">&#10094;</span>
+            <span class="arrow right" onclick="next()">&#10095;</span>
+            <div class="slides-inner">
+                <img src="slides/banners/4.jpg" height="250px" width="100%" class="active">
+                <img src="slides/banners/2.jpg" height="250px" width="100%">
+                <img src="slides/banners/1.png" height="250px" width="100%">
+                <img src="slides/banners/3.webp" height="250px" width="100%">
+                <img src="slides/banners/5.webp" height="250px" width="100%">
+                <img src="slides/banners/7.jpg" height="250px" width="100%">
+            </div>
+        </div>
+        <div class="containers">
+            <div class="applinces">
+                <h3>Appliances for your home | Up to 55% off</h3>
+                <div class="items">
+                    <div class="item">
+                        <img src="slides/applinces/AC.webp" height="100px" width="120px">
+                        <p>Air Conditioners</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/applinces/fridge2.jpg" height="100px" width="120px">
+                        <p>Refrigerators</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/applinces/wave2.jpg" class="wave" height="100px" width="120px">
+                        <p>Microwave</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/applinces/washing machne.avif" height="100px" width="120px">
+                        <p>Washing Machine</p>
+                    </div>
+                </div>
+            </div>
+            <div class="homeappliances">
+                <h3>Starting ₹199 | Amazon Brands & more</h3>
+                <div class="items">
+                    <div class="item">
+                        <img src="slides/home appliances/bedsheets.webp" height="100px" width="120px">
+                        <p>Starting ₹199 |Bedsheets</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/home appliances/curtains.avif" height="100px" width="120px">
+                        <p>Starting ₹199 | Curtains</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/home appliances/decor.avif" height="100px" width="120px">
+                        <p>Up to 60% off|Home decor</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/home appliances/iron board.avif" height="100px" width="120px">
+                        <p>Minimum 40% off | Ironing board</p>
+                    </div>
+                </div>
+            </div>
+            <div class="homeessentials">
+                <h3>Under ₹499 | Deals on home improvement essentials</h3>
+                <div class="items">
+                    <div class="item">
+                        <img src="slides/home essentials/accesessarecies.avif" height="100px" width="120px">
+                        <p>Under ₹399 | Bathroom accessories</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/home essentials/cleaning.avif" height="100px" width="120px">
+                        <p>Under ₹199 | Cleaning supplies</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/home essentials/home.avif" height="100px" width="120px">
+                        <p>Under ₹299 | Wallpapers</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/home essentials/home tools.avif" height="100px" width="120px">
+                        <p>Under ₹199 | Home tools</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="babysafety">
+                <h3>Up to 50% off | Baby care & toys | Amazon Brands</h3>
+                <div class="items">
+                    <div class="item">
+                        <img src="slides/babysafety/cars.avif" height="100px" width="120px">
+                        <p>Starting ₹649 | RC cars</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/babysafety/cloths.avif" height="100px" width="120px">
+                        <p>Under ₹599 | Comfort clothes</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/babysafety/riding.avif" height="100px" width="120px">
+                        <p>Up to 50% off | Ride ons</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/babysafety/safety.avif" height="100px" width="120px">
+                        <p>Up to 50% off | Baby safety essentials</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containers2">
+            <div class="homeitems">
+                <h3>
+                    Revamp your home in style
+                </h3>
+                <div class="items">
+                    <div class="item">
+                        <img src="slides/homeitems/cushions covers.jpg" height="100px" width="120px">
+                        <p>Cushion covers,bedsheets</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/homeitems/home storage.jpg" height="100px" width="120px">
+                        <p>Home storage</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/homeitems/lighting.jpg" height="100px" width="120px">
+                        <p>Lighting solutions</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/homeitems/vases.jpg" height="100px" width="120px">
+                        <p>Figurines,vases</p>
+                    </div>
+                </div>
+            </div>
+            <div class="caritems">
+                <h3>Automotive essentials | Up to 60% off</h3>
+                <div class="items">
+                    <div class="item">
+                        <img src="slides/caritems/pexels-sasha-maslova-8648196.jpg" height="100px" width="120px">
+                        <p>Cleaning accessories</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/caritems/tyre & rim care.jpg" height="100px" width="120px">
+                        <p>Tyre & rim care</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/caritems/helmet.jpg" height="100px" width="120px">
+                        <p>Helmet</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/caritems/vaccum.jpg" height="100px" width="120px">
+                        <p>Vaccum cleaner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="electronics">
+                <h3>Up to 75% off | Collections of electronics</h3>
+                <div class="items">
+                    <div class="item">
+                        <img src="slides/electronics/watch.jpg" height="100px" width="120px">
+                        <p>Watches</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/electronics/mobile.jpg" height="100px" width="120px">
+                        <p>Moblies</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/electronics/powerbank.jpg" height="100px" width="120px">
+                        <p>Power banks</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/electronics/charger.jpg" height="100px" width="120px">
+                        <p>Mobile charges</p>
+                    </div>
+                </div>
+            </div>
+            <div class="kitchenitems">
+                <h3>Up to 60% off | Curated kitchen products</h3>
+                <div class="items">
+                    <div class="item">
+                        <img src="slides/kitchen/bottels.jpg" height="100px" width="120px">
+                        <p>Bottles</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/kitchen/cutters.jpg" height="100px" width="120px">
+                        <p>Cutters</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/kitchen/kitchen items.jpg" height="100px" width="120px">
+                        <p>Kitchen storages</p>
+                    </div>
+                    <div class="item">
+                        <img src="slides/kitchen/knifes.jpg" height="100px" width="120px">
+                        <p>Knifes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll">
+            <div class="babytoys">
+                <h2>Starting ₹399 | Baby cars & toys</h2>
+                <span class="arrow left" onclick="left()">&#10094;</span>
+                <span class="arrow right" onclick="right()">&#10095;</span>
+                <div class="toys" id="btoys">
+
+                    <img src="slides/babytoys/car2.avif">
+                    <img src="slides/babytoys/car1.avif">
+                    <img src="slides/babytoys/car3.avif">
+                    <img src="slides/babytoys/car4.avif">
+                    <img src="slides/babytoys/car5.avif">
+                    <img src="slides/babytoys/car7.avif">
+                    <img src="slides/babytoys/car8.avif">
+                    <img src="slides/babytoys/car9.avif">
+                    <img src="slides/babytoys/car10.avif">
+                    <img src="slides/babytoys/car11.avif">
+                    <img src="slides/babytoys/car12.avif">
+                    <img src="slides/babytoys/car13.avif">
+                </div>
+            </div>
+            <div class="electronicdevices">
+                <h2>Up to 55% off | Electronics & accessories from Amazon Launchpad</h2>
+                <span class="arrow left" onclick="sideleft()">&#10094;</span>
+                <span class="arrow right" onclick="sideright()">&#10095;</span>
+                <div class="devices" id="electronic">
+                    <img src="slides/elect/el14.jpg">
+                    <img src="slides/elect/el9.jpg">
+                    <img src="slides/elect/el10.jpg">
+                    <img src="slides/elect/el8.jpg">
+                    <img src="slides/elect/el11.jpg">
+                    <img src="slides/elect/el7.jpg">
+                    <img src="slides/elect/el12.jpg">
+                    <img src="slides/elect/el6.avif">
+                    <img src="slides/elect/el13.jpg">
+                    <img src="slides/elect/el5.avif">
+                    <img src="slides/elect/el4.avif">
+                    <img src="slides/elect/el3.avif">
+                    <img src="slides/elect/el2.avif">
+                </div>
+            </div>
+            <div class="essentials">
+                <h2>Up to 60% off | Home & kitchen essentials </h2>
+                <span class="arrow left" onclick="sideleft1()">&#10094;</span>
+                <span class="arrow right" onclick="sideright1()">&#10095;</span>
+                <div class="essentialitems" id="kitchen">
+                    <div class="essential-card">
+                        <img src="slides/essentials/k1.jpg">
+                    </div>
+                    <div class="essential-card">
+                        <img src="slides/essentials/k2.jpg">
+                    </div>
+                    <div class="essential-card">
+                        <img src="slides/essentials/k3.jpg" height="230px" width="230px">
+                    </div>
+                    <div class="essential-card">
+                        <img src="slides/essentials/k4.jpg">
+                    </div>
+                    <div class="essential-card">
+                        <img src="slides/essentials/k5.jpg">
+                    </div>
+                    <div class="essential-card">
+                        <img src="slides/essentials/k6.jpg">
+                    </div>
+                    <div class="essential-card">
+                        <img src="slides/essentials/k7.jpg">
+                    </div>
+                    <div class="essential-card">
+                        <img src="slides/essentials/k8.jpg">
+                    </div>
+                    <div class="essential-card">
+                        <img src="slides/essentials/k9.jpg">
+                    </div>
+                    <div class="essential-card">
+                        <img src="slides/essentials/k10.jpg">
+                    </div>
+                    <div class="essential-card">
+                        <img src="slides/essentials/k11.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="furniture">
+                <h2>Best Sellers in Furniture</h2>
+                <span class="arrow left" onclick="sideleft2()">&#10094;</span>
+                <span class="arrow right" onclick="sideright2()">&#10095;</span>
+                <div class="wood" id="furnituree">
+                    <div class="furniture-card">
+                        <img src="slides/furniture/f1.jpg">
+                    </div>
+                    <div class="furniture-card">
+                        <img src="slides/furniture/f2.jpg">
+                    </div>
+                    <div class="furniture-card">
+                        <img src="slides/furniture/f3.jpg">
+                    </div>
+                    <div class="furniture-card">
+                        <img src="slides/furniture/f4.jpg">
+                    </div>
+                    <div class="furniture-card">
+                        <img src="slides/furniture/f5.jpg">
+                    </div>
+                    <div class="furniture-card">
+                        <img src="slides/furniture/f6.jpg">
+                    </div>
+                    <div class="furniture-card">
+                        <img src="slides/furniture/f7.jpg">
+                    </div>
+                    <div class="furniture-card">
+                        <img src="slides/furniture/f8.jpg">
+                    </div>
+                    <div class="furniture-card">
+                        <img src="slides/furniture/f9.jpg">
+                    </div>
+                    <div class="furniture-card">
+                        <img src="slides/furniture/f10.jpg">
+                    </div>
+                    <div class="furniture-card">
+                        <img src="slides/furniture/f11.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="fooditems">
+                <h3>Exclusive Snack Collection</h3>
+                <img src="slides/c1.jpg" height="300px" width="260px">
+                <a href="#" class="see-more">See More</a>
+            </div>
+            <div class="womencloths">
+                <h3>Women's Fashon Collecton</h3>
+                <img src="slides/w1.jpg" height="300px" width="260px">
+                <a href="#" class="see-more">See More</a>
+            </div>
+            <dv class="beauty-products">
+                <h3>Beauty & Makeup Collectons</h3>
+                <img src="slides/product.jpg" height="300px" width="260px">
+                <a href="#" class="see-more">See More</a>
+            </dv>
+            <div class="toy">
+                <h3>Bring joy home with every toy</h3>
+                <img src="slides/toys.jpg" height="300px" width="260px">
+                <a href="#" class="see-more">See More</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h4>See Personalized Recommendations</h4>
+        <div class="btn"> <button class="foot">Sign in</button></div>
+        <p class="new-user">New customer?<a href="#">Start here</a></p>
+    </div>
+    <div>
+        <p class="back-top">Back to top</p>
+    </div>
+    <div class="footerr">
+        <div class="vertical-row">
+            <div class="column1">
+                <div class="heading1">Get to Know<br> Us</div>
+                <ul>
+                    <li>About Amazon</li>
+                    <li>Careers</li>
+                    <li>Press Releases</li>
+                    <li>Amazon Science</li>
+                </ul>
+            </div>
+            <div class="column2">
+                <div class="heading2">Connect with <br>Us</div>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+            <div class="column3">
+                <div class="heading3">Make Money with Us</div>
+                <ul>
+                    <li>Sell on Amazon</li>
+                    <li>Sell under Amazon<br> Accelator</li>
+                    <li>Protect and Build Your Brand</li>
+                    <li>Amazon Global Selling</li>
+                    <li>Supply to Amazon</li>
+                    <li>Become an Affiliate</li>
+                    <li>Fulfilment by Amazon</li>
+                    <li>Advertise Your Products</li>
+                    <li>Amazon Pay on Merchants</li>
+                </ul>
+            </div>
+            <div class="column4">
+                <div class="heading4">Let Us Help You</div>
+                <ul>
+                    <li>Your Account</li>
+                    <li>Returns Centre</li>
+                    <li>Recalls and Product Safety <br>Alerts</li>
+                    <li>100% Purchase Protection</li>
+                    <li>Amazon App Download</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+
+        </div>
+        <hr class="below">
+        <div class="btns">
+            <img src="amazon.png" width="90px">
+            <button class="btn1">English</button>
+            <button class="btn2">India</button>
+        </div>
+        <div class="last-one">
+            <ul class="col1">
+                <li><span>AbeBooks</span><br>Books,art<br>&collectibles</li>
+                <li><span>Amazon Web Services<br></span>Scalable Cloud<br>Computing Services</li>
+                <li><span>Audible</span><br>Download<br>Audio Books</li>
+                <li><span>IMDb</span><br>Movies,TV<br>&Celebrities</li>
+            </ul>
+        </div>
+        <div class="lastt">
+            <ul class="col2">
+                <li><span>Shopbop</span><br>Designer<br>Fashion Brands</li>
+                <li><span>Amazon Business</span><br>Everything Foe<br>Your Business</li>
+                <li><span>Prime Now</span><br>2-Hour Delivery<br>on Everyday Items</li>
+                <li><span>Amazon Prime Music</span><br>100 million songs,ad-<br>free<br>Over 15 million
+                    podcast<br>episodes
+                </li>
+            </ul>
+            <p>Conditions of Use & Sale Privacy Notice Interest-Based Ads<br> © 1996-2025,
+                Amazon.com, Inc. or its
+                affiliates</p>
+        </div>
+    </div>
+
+    <script src="ama.js">
+    </script>
+</body>
+
+</html>
