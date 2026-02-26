@@ -3,6 +3,8 @@ Developed a responsive Amazon-inspired e-commerce interface using HTML, CSS, and
 ## Images
 Image assets are intentionally excluded from this repository  to keep it lightweight.The project structure and references are maintained,allowing images to be added if required.
 
+### Link : https://glowing-moonbeam-bb5a40.netlify.app
+
 ## ScreenShots
 
 <img width="1352" height="677" alt="amazon1" src="https://github.com/user-attachments/assets/a02079c9-9500-424a-a0ce-2a5206fa7bc3" />
